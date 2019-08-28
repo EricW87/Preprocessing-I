@@ -154,22 +154,56 @@ html header p,
 body header p,
 html footer p,
 body footer p {
+  margin-top: 10px;
   text-align: center;
 }
-html section,
-body section {
+html .main-body,
+body .main-body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+html .main-body .intro,
+body .main-body .intro {
+  width: 48%;
+  border: 1px solid black;
+}
+html .main-body .skills,
+body .main-body .skills {
+  width: 48%;
+  border: 1px solid black;
+}
+html .main-body .work-history,
+body .main-body .work-history {
+  width: 96%;
+  border: 1px solid black;
+}
+html .main-body .work-history table,
+body .main-body .work-history table {
+  width: 100%;
+}
+html .main-body .work-history table tr:nth-child(even),
+body .main-body .work-history table tr:nth-child(even) {
+  background: #CCC;
+}
+html .main-body .work-history table tr:nth-child(odd),
+body .main-body .work-history table tr:nth-child(odd) {
+  background: #FFF;
+}
+html .main-body .work-history table tr,
+body .main-body .work-history table tr {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
-html .intro,
-body .intro {
-  width: 48%;
-  border: 1px solid black;
+html .main-body .work-history table tr th,
+body .main-body .work-history table tr th {
+  text-align: left;
 }
-html .skills,
-body .skills {
-  width: 48%;
-  border: 1px solid black;
+html .main-body .work-history table tr th,
+body .main-body .work-history table tr th,
+html .main-body .work-history table tr td,
+body .main-body .work-history table tr td {
+  width: 25%;
 }
