@@ -53,7 +53,53 @@ table {
     box-sizing: border-box;
 }
 
+.nav-flex() {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.section-flex() {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 html, body {
-    height: 100%;
+	height: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+
+	header, footer {
+		background: lightgrey;
+
+		nav {
+			ul {
+				.nav-flex;
+			}
+		}
+
+		p {
+			text-align: center;
+		}
+	}
+
+	section {
+		.section-flex();
+	}
+
+	.intro {
+		width: 48%;
+		border: 1px solid black;
+	}
+
+	.skills {
+		width: 48%;
+		border: 1px solid black;
+	}
+	
+	
 }
 
