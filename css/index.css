@@ -288,6 +288,7 @@ body .main-body h1 {
 html .main-body section,
 body .main-body section {
   padding: 2%;
+  font-family: Arial;
   font-size: 1.6rem;
 }
 html .main-body .intro,

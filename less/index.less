@@ -51,6 +51,7 @@ table {
 /* Set every element's box-sizing to border-box */
 @nav-font-size: 2rem;
 @phone: ~"( max-width: 500px )";
+@font-p: Arial;
 
 * {
     box-sizing: border-box;
@@ -129,7 +130,7 @@ html, body {
 					text-align: center;
 				}
 
-				p {
+				p {				
 					font-size: 3rem;
 				}
 
@@ -176,6 +177,7 @@ html, body {
 
 	.main-body {
 		.section-flex;
+		
 
 		h1 {
 			margin-bottom: 10px;
@@ -185,12 +187,16 @@ html, body {
 
 		section {
 			padding: 2%;
+
+			font-family: @font-p;
 			font-size: 1.6rem;
+
 		}
 
 		.intro {
 			width: 48%;
 			border: 1px solid black;
+			
 		}
 	
 		.skills {
