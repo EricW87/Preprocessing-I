@@ -132,6 +132,7 @@ table {
 }
 html,
 body {
+  font-size: 62.5%;
   height: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -142,6 +143,13 @@ html footer,
 body footer {
   background: lightgrey;
 }
+html header nav,
+body header nav,
+html footer nav,
+body footer nav {
+  background: white;
+  font-size: 2rem;
+}
 html header nav ul,
 body header nav ul,
 html footer nav ul,
@@ -149,6 +157,113 @@ body footer nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+html header nav ul a,
+body header nav ul a,
+html footer nav ul a,
+body footer nav ul a {
+  text-decoration: none;
+  color: grey;
+}
+html header nav ul a:hover,
+body header nav ul a:hover,
+html footer nav ul a:hover,
+body footer nav ul a:hover {
+  color: darkred;
+}
+@media ( max-width: 500px ) {
+  html header nav ul,
+  body header nav ul,
+  html footer nav ul,
+  body footer nav ul {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+html header div,
+body header div,
+html footer div,
+body footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html header div img,
+body header div img,
+html footer div img,
+body footer div img {
+  width: 50%;
+  margin: 3%;
+}
+html header div div,
+body header div div,
+html footer div div,
+body footer div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+html header div div h1,
+body header div div h1,
+html footer div div h1,
+body footer div div h1 {
+  width: 100%;
+  margin: 3%;
+  font-size: 4rem;
+  text-align: center;
+}
+html header div div p,
+body header div div p,
+html footer div div p,
+body footer div div p {
+  font-size: 3rem;
+}
+html header div div .button,
+body header div div .button,
+html footer div div .button,
+body footer div div .button {
+  width: 20%;
+  height: 10%;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-style: bold;
+}
+html header div div .button:hover,
+body header div div .button:hover,
+html footer div div .button:hover,
+body footer div div .button:hover {
+  background: darkred;
+  cursor: pointer;
+}
+@media ( max-width: 500px ) {
+  html header div,
+  body header div,
+  html footer div,
+  body footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  html header div img,
+  body header div img,
+  html footer div img,
+  body footer div img {
+    width: 100%;
+  }
+  html header div .button,
+  body header div .button,
+  html footer div .button,
+  body footer div .button {
+    width: 33%;
+    margin: 5%;
+  }
 }
 html header p,
 body header p,
@@ -162,7 +277,18 @@ body .main-body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+html .main-body h1,
+body .main-body h1 {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+html .main-body section,
+body .main-body section {
+  padding: 2%;
+  font-size: 1.6rem;
 }
 html .main-body .intro,
 body .main-body .intro {
@@ -174,14 +300,23 @@ body .main-body .skills {
   width: 48%;
   border: 1px solid black;
 }
+html .main-body .skills ul,
+body .main-body .skills ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
 html .main-body .work-history,
 body .main-body .work-history {
-  width: 96%;
+  width: 100%;
   border: 1px solid black;
 }
 html .main-body .work-history table,
 body .main-body .work-history table {
   width: 100%;
+}
+html .main-body .work-history table tr:first-child,
+body .main-body .work-history table tr:first-child {
+  font-weight: bold;
 }
 html .main-body .work-history table tr:nth-child(even),
 body .main-body .work-history table tr:nth-child(even) {
